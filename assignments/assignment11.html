@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Flex Containers</title>
+    <style>
+      .flexChild {
+        text-align: center;
+        width: 50px;
+      }
+      .flexChild {
+        height: 50px;
+      }
+      .flexChild {
+          background-color: orange;
+        height: 100px;
+      }
+      .flexRow {
+        background-color: red;
+        flex-direction: row;
+      }
+      .flexRowReverse {
+        background-color: pink;
+        flex-direction: row-reverse;
+      }
+      .flexColumn {
+        background-color: blue;
+        flex-direction: column;
+      }
+      .flex {
+        background-color: pink;
+        flex-direction: column-reverse;
+      }
+      .flexWrap {
+        background-color: black;
+        flex-wrap: wrap;
+      }
+      .flexSpaceBetween {
+        background-color: red;
+        justify-content: space-between;
+      }
+      .flexAlignItemsCenter {
+        background-color: mediumpurple;
+        align-items: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2>Container1</h2>
+    <div>
+      <div class="flexChild">1</div>
+      <div class="flexChild">2</div>
+      <div class="flexChild">3</div>
+      <div class="flexChild">4</div>
+    </div>
+      <h2> Container2</h2>
+
+    <div class="flexContainer flexRow">
+      <div class="flexChild">A</div>
+      <div class="flexChild">B</div>
+      <div class="flexChild">C</div>
+      <div class="flexChild">D</div>
+    </div>
+    <h2> Container3</h2>
+
+    <div class="flexContainer flexRowReverse">
+      <div class="flexChild">1</div>
+      <div class="flexChild">2</div>
+      <div class="flexChild">3</div>
+      <div class="flexChild">4</div>
+    </div>
+    <h2> Container4</h2>
+
+    <div class="flexContainer flexColumn">
+      <div class="flexChild">A</div>
+      <div class="flexChild">B</div>
+      <div class="flexChild">C</div>
+      <div class="flexChild">D</div>
+    </div>
