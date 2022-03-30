@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Transitions</title>
+    <style>
+    #transition1 {
+      transition: color 1s;
+    }
+    #transition1:hover {
+      color: blue;
+    }
+
+    #transition2{
+      transiion-property: transform;
+      transition-duration: 2s;
+      transition-timimg-function: ease;
+      transition-delay: 1s;
+      transform-origin: left;
+    }
+    #transition2:hover{
+      transform: scale(5);
+    }
+
+    #box{
+      box-sizing: border-box;
+      height: 200px;
+      width: 200px;
+      background-color: red;
+      transition:
+      border-radius 2s ease-in,
+      background-color 2s;
+    }
+    #box:hover{
+      background-color: blue;
+      border-radius: 100%;
+    }
+      </style>
+  </head>
+  <body>
+    <h1 id="transition1">
+      This is basic transition.
+      <h1>
+        <h2 id="transition2">
+          Another transition 2
+          <h2>
+            <div id="box"></div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Animation example</title>
+    <style>
+@keyframes toRed{
+  0%, 100% {
+    color: black;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: green;
+  }
+}
+
+#animation1 {
+  animation: toRed 1s infinite;
+}
+
+#box{
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px:
+  background-color: red;
+  animation: toCircle 2s infinite;
+}
+
+@keyframes toCircle{
+  0%, 100%{
+    background-color: red;
+    border-radius: 0px;
+  }
+  25%{
+    border-radius: 50% 0% 50% 75%
+  }
+  50%{
+    background-color: blue;
+    border-radius: 100%
+  }
+  75{
+    transform: translateX(400px) rotate(1800deg);
+  }
+}
+      </style>
+  </head>
+  <body>
+    <h1 id="animation1"> this is a basic animation</h1>
+    <div id="box"></div>
+  </body>
+</html>
